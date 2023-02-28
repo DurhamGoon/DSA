@@ -24,3 +24,10 @@ class Flower:
     
     def get_color(self):
         return self._color
+    
+    def pluck(self):
+        if self._petal_number - 1 < 0:
+            return("Goofy ahh. What you gonna pluck omegalul")
+        else:
+            self._petal_number -= 1
+            return("Ouch. You hurt {}. :( They have {} petals left.".format(self._name, self._petal_number))
