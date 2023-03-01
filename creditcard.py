@@ -34,6 +34,9 @@ class CreditCard:
     def make_payment(self, amount):
         if type(amount) not in (int, float):
             raise TypeError("Bro, get yo bitcoin using ahhh outta here. We accept real money.")
+        
+        if amount < 0:
+            raise ValueError("You think you slick boi. We have a flawless banking game. All we care about is money. L bozo.")
         self._balance -= amount
 
     
