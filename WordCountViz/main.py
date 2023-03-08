@@ -1,5 +1,13 @@
 def word_count(file_name):
-    # Counts the words in the file and stores into a frequency dictionary
+    '''
+    Counts the number of each word in an input file
+
+            Parameters: 
+                    file_name: File to be word counted
+
+            Returns:
+                    word_freq (dict): Frequency distribution of each word in the document
+    '''
     word_freq = {}
     with open(file_name,'w') as f:
         for line in f:
