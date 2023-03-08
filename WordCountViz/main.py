@@ -36,6 +36,7 @@ def data_visualization(data, book_name):
 
             Parameters:
                     data: Dictionary containing word count of book passed
+                    book_name: The name of the book based on user input
 
             Returns:
                     PNG containing barchart of word count data 
