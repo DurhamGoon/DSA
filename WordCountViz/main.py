@@ -72,7 +72,7 @@ if __name__ == "__main__":
         print("Please enter a valid book name!")
         sys.exit()
 
-    # gathers the word count for the input document then visualizes the counts in seaborn
+    # Gathers the word count for the input document then visualizes the counts in seaborn
     try:
         data_visualization(word_count(book_path),book_name)
     except FileNotFoundError:
