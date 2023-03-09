@@ -47,7 +47,6 @@ def data_visualization(data, book_name):
     top_10_words = df.head(20)
     print(top_10_words)
     sns.barplot(data=top_10_words, x='Word',y='Count',palette='dark')
-    sns.color_palette("magma")
     plt.xticks(rotation=45)
     plt.title(f'Top 20 Words in {book_name}!')
     plt.xlabel('Word')
